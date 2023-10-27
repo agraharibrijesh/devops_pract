@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 Django
-=======
-Django
->>>>>>> origin/weather-app
 whitenoise>=5.3.0
