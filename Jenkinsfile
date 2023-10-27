@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                       def gitRepoUrl = 'https://github.com/agraharibrijesh/devops_pract.git'
-                      checkout([$class: 'GitSCM', branches: [[name: 'main']],
+                      checkout([$class: 'GitSCM', branches: [[name: 'weather-app']],
                        userRemoteConfigs: [[url: gitRepoUrl]]])
                 }
             }
