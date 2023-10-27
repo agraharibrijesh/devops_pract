@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: "3.8"
 
 services:
@@ -7,4 +8,15 @@ services:
     image: brijesh35/my-jobportal-app:1.4
     command: python manage.py runserver 0.0.0.0:8000
     ports:
+=======
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: jobportal-app-container
+    image: brijesh35/my-jobportal-app:1.4
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+>>>>>>> origin/weather-app
       - 8000:8000
