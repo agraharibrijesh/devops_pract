@@ -15,7 +15,7 @@ pipeline {
         stage('Build-image and push-docker hub') {
             steps {
                 script {
-                        //sh 'sudo docker rmi -f \$(docker images -q)|'
+                        //sh 'sudo docker rmi -f \$(docker images -q)'
                         sh "docker images -q | grep -v '67a4b1138d2d' | xargs -I {} docker rmi -f {}"
                         sh "sudo docker-compose build"
                            withCredentials([usernamePassword(credentialsId: 'dockercred', 
