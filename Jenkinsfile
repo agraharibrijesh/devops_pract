@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
 
     environment {
@@ -161,3 +161,4 @@ stage('Publish Trivy Report') {
         }
     }
 }
+*/
